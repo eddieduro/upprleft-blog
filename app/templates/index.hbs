@@ -1,0 +1,55 @@
+{{#carousel-container transition-interval=400}}
+  {{#carousel-body}}
+  {{#each model as |post|}}
+    {{#carousel-item class="carouselItem"}}
+    {{#link-to 'post' post.id}}<img src={{post.image}}>
+    <span class="titleBar">
+      <span class="titleBarInner">
+        <span class="title">{{post.title}}</span>
+      </span>
+      <span class="titleBarInner">
+        <span class="subtitle">{{post.date}}</span>
+      </span>
+    </span>
+    {{/link-to}}
+    {{/carousel-item}}
+  {{/each}}
+  {{/carousel-body}}
+
+<div class="arrows">
+  {{#carousel-arrow direction="left" class="line-arrow left"}}
+    <i class="fa fa-chevron-left"></i>
+  {{/carousel-arrow}}
+  {{#carousel-arrow direction="right" class="line-arrow right"}}
+  <i class="fa fa-chevron-right"></i>
+  {{/carousel-arrow}}
+</div>
+
+{{/carousel-container}}
+
+ <div class="container">
+   <div class="pageBreak">
+     <h3 class='text-center'>Welcome to Stumptown Beans.  The finest blog for finest conneuseurs of the finest coffee this planet can spit out.  If you like your morning beverage dank and dark and brimming with the black, smokey stillness of tropical hillside dew, than these articles will excite your caffienated brain like no other vegatable writing on the world wide web<.</h3>
+
+     <h2 class='text-center'>Read On</h2>
+     <i class="fa fa-angle-double-down"></i>
+   </div>
+
+
+ </div>
+<div class='row'>
+{{log model}}
+{{#each model as |post|}}
+  <div class='postTease'>
+    {{#link-to 'post' post.id}}
+    <div class='img'>
+      <div class='overlay'>
+        <h3 class='overlayText'>{{post.title}}</h3>
+      </div>
+      {{post-tile post=post }}
+    </div>
+    {{/link-to}}
+  </div>
+{{/each}}
+
+</div>

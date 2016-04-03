@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft/bower_components/ember-cli-test-loader/test-loader.js

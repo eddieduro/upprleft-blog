@@ -1,0 +1,14 @@
+<div class="row post">
+  <div class="container">
+    <h2>{{post.title}}</h2>
+    <h4>{{post.date}}</h4>
+    <p class="post-body">{{{post.body}}}</p>
+
+    {{#each post.comments as |comment|}}
+    {{comment-tile comment=comment}}
+    <button class="btn"{{action 'deleteComment' comment}}>Delete</button>
+    {{/each}}
+
+  </div>
+
+</div>

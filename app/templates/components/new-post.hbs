@@ -1,0 +1,18 @@
+{{#if newPostForm}}
+<h2> Add a new post </h2>
+  <form>
+    <div class='form-group'>
+      <label for='title'>Title:</label>
+      {{input value=title id='title'}}
+      <label for='body'>Body:</label>
+      {{textarea value=body id='body'}}
+      <label for='date'>Date:</label>
+      {{input value=date id='date'}}
+      <label for='image'>Image URL:</label>
+      {{input value=image id='image'}}
+    </div>
+    <button class="btn" {{action 'savePost'}}></button>
+  </form>
+{{else}}
+<button class="btn" {{action 'newPostFormShow'}}>Add new post</button>
+{{/if}}

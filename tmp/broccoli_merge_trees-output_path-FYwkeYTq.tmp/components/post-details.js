@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft/app/components/post-details.js

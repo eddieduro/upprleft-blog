@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft/node_modules/klassy/lib/klassy.js

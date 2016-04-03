@@ -1,0 +1,8 @@
+<div class="row">
+  {{#each model as |post|}}
+  <div class="col-md-6 edit-post">    
+    {{admin-tile post=post update="update" destroyPost="destroyPost"}}
+  </div>
+  {{/each}}
+</div>
+{{new-post savePost="savePost"}}

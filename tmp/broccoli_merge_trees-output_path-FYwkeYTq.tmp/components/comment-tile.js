@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft/app/components/comment-tile.js

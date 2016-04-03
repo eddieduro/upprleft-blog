@@ -1,0 +1,270 @@
+$dark_color: #fff;
+$default-font: 'Fira Sans', sans-serif;
+h1, h2, h3{
+  font-family: $default-font;
+  font-weight: 500;
+}
+body{
+  overflow-x: hidden;
+}
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li, a {
+    float: none;
+    display: inline-block;
+  }
+
+  li{
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  .navbar-brand {
+    font-size: 1.7em;
+  }
+}
+.navbar {
+  display: flex;
+  background-color: black;
+  ul
+  {
+    justify-content: center;
+  }
+  a {
+    color: white;
+    font-size: 1.3em;
+  }
+  .navbar-toggle {
+    background-color:white;
+  }
+}
+.navbar-bottom {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+  .titleBar{
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    position: absolute;
+    margin-top: -250px;
+    height: 150px;
+    .titleBarInner{
+      display: flex;
+      justify-content: center;
+      .title{
+        font-size: 3em;
+      }
+      .subtitle{
+        font-size: 2em;
+      }
+    }
+  }
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  position: relative;
+  bottom: 400px;
+  color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  .fa{
+    background-color: rgba(0,0,0,0.8);
+    padding: 4px;
+    border-radius: 2px;
+  }
+}
+.carouselItem img {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  .postTease{
+    flex: 2 50%;
+    &:nth-child(1){
+      flex: 1 70%;
+    }
+    &:nth-child(2){
+      flex: 2 30%;
+    }
+    &:nth-child(3){
+      flex: 2 30%;
+      height: 300px;
+    }
+    &:nth-child(4){
+      flex: 2 70%;
+    }
+    &:nth-child(5){
+      flex: 2 70%;
+      height:300px;
+    }
+    &:nth-child(6){
+      flex: 2 30%;
+    }
+    .img{
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: -5px;
+      img{
+        width: 100%;
+        height: 60vh;
+      }
+      .overlay{
+        position: absolute;
+        display: block;
+        opacity: 0;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        .overlayText{
+          margin: 0 auto;
+          color: white;
+          font-size: 2.3em;
+        }
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.pageBreak {
+  color: grey;
+  padding-bottom: 50px;
+  h3{
+    font-weight: 300;
+  }
+  h2{
+    font-size: 4em;
+    color: black;
+  }
+  .fa {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+  }
+}
+
+.post-photo {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+}
+/**************
+Blog post
+*************/
+.post {
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+}
+.post-body {
+  font-size: 20px;
+  font-family: $default-font;
+}
+.imgGrid{
+  display: flex;
+  div{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    #articleImg1 {
+      width: auto;
+      height: 300px;
+      padding-bottom: 30px;
+    }
+    #articleImg2 {
+      width: 650px;
+      height: 300px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+    #articleImg3 {
+      width: 620px;
+      height: 300px;
+      padding-bottom: 30px;
+    }
+    #articleImg4 {
+      width: auto;
+      height: 300px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+.comment {
+  display: flex;
+  justify-content: center;
+  border: solid 2px;
+  width: 170px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.comment-form {
+  text-align: center;
+
+}
+
+input {
+  height: 40px;
+  width: 75%;
+  float: right;
+  margin-right: 100px;
+  // margin-bottom: 10px;
+}
+textarea {
+  height: 40px;
+  width: 75%;
+  float: right;
+  margin-right: 100px;
+}
+
+.commentSection{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .saveBtn {
+    margin-top: 20px;
+  }
+}
+
+.comment-display {
+  float: left;
+  border: lightgray solid 2px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  height: 60px;
+}
+
+
+/**************
+Admin section
+*************/
+.edit-post{
+  margin-top: 50px;
+}
