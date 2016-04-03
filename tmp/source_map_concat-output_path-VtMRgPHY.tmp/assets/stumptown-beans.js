@@ -1041,7 +1041,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         var el4 = dom.createElement("p");
         var el5 = dom.createComment("");
         dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("! © 2016 Eddie Duro and Josh Overly.");
+        var el5 = dom.createTextNode("! © 2016 Upprleft");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n    ");
