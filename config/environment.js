@@ -8,6 +8,9 @@ module.exports = function(environment) {
     firebase: 'https://stumptownblog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
+    disqus: {
+      shortname: 'upprleft'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

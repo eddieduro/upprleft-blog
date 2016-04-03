@@ -4,11 +4,11 @@
     <h4>{{post.date}}</h4>
     <p class="post-body">{{{post.body}}}</p>
 
-    {{#each post.comments as |comment|}}
+    <!-- {{#each post.comments as |comment|}}
     {{comment-tile comment=comment}}
     <button class="btn"{{action 'deleteComment' comment}}>Delete</button>
-    {{/each}}
-
+    {{/each}} -->
+{{disqus-comments identifier=post.title}}
   </div>
 
 </div>
