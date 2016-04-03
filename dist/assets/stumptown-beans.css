@@ -163,17 +163,22 @@ body {
 /**************
 Blog post
 *************/
-.post h2 {
-  text-align: center;
-  margin-top: 50px; }
-
-.post h4 {
-  text-align: center;
-  margin-bottom: 50px; }
+.post {
+  font-family: "Oswald", sans-serif; }
+  .post h2 {
+    text-align: center;
+    margin-top: 50px; }
+  .post h4 {
+    text-align: center;
+    margin-bottom: 50px; }
 
 .post-body {
-  font-size: 20px;
-  font-family: "Fira Sans", sans-serif; }
+  font-size: 1.3em; }
+  .post-body blockquote {
+    font-family: "Karla", sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: lightgrey; }
 
 .imgGrid {
   display: flex; }

@@ -1,5 +1,8 @@
 $dark_color: #fff;
 $default-font: 'Fira Sans', sans-serif;
+$quote-font: 'Karla', sans-serif;
+$article-font: 'Oswald', sans-serif;
+
 h1, h2, h3{
   font-family: $default-font;
   font-weight: 500;
@@ -199,20 +202,24 @@ body{
 Blog post
 *************/
 .post {
+  font-family: $article-font;
   h2 {
     text-align: center;
     margin-top: 50px;
-
   }
   h4 {
     text-align: center;
     margin-bottom: 50px;
   }
-
 }
 .post-body {
-  font-size: 20px;
-  font-family: $default-font;
+  font-size: 1.3em;
+  blockquote{
+    font-family: $quote-font;
+    font-style: italic;
+    font-size: 1.5em;
+    color: lightgrey;
+  }
 }
 .imgGrid{
   display: flex;
