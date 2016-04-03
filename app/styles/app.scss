@@ -1,3 +1,5 @@
+
+
 $dark_color: #252525;
 $default-font: 'Fira Sans', sans-serif;
 $quote-font: 'Karla', sans-serif;
@@ -22,7 +24,8 @@ body{
   text-indent: -9999px;
   padding: 0;
   border: none;
-  margin-top: 20px;
+  margin-top: 30px;
+  top: 20px;
 }
 #contact-link {
   margin-left: 60px;
@@ -64,6 +67,7 @@ body{
     color: $dark_color;
     font-size: 1.3em;
     text-decoration: none;
+    top: 10px;
     a{
       &:hover{
         color: $dark_color;
