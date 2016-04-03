@@ -5,27 +5,45 @@ h1, h2, h3 {
 body {
   overflow-x: hidden; }
 
+.logo {
+  background: url("../images/upprleft-logo.png") no-repeat;
+  position: absolute;
+  background-size: contain;
+  display: block;
+  height: 58px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+  text-indent: -9999px;
+  padding: 0;
+  border: none;
+  margin-top: 20px; }
+
+#contact-link {
+  margin-left: 60px; }
+
 .navbar-nav {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  color: #252525; }
   .navbar-nav > li, .navbar-nav a {
     float: none;
     display: inline-block;
-    color: white;
+    color: #252525;
     font-size: 1.3em;
     text-decoration: none; }
     .navbar-nav > li a:hover, .navbar-nav a a:hover {
-      color: white;
+      color: #252525;
       background-color: inherit; }
     .navbar-nav > li a:before, .navbar-nav a a:before {
       content: "";
-      color: white;
+      color: #252525;
       position: absolute;
       width: 100%;
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #fff;
+      background-color: #252525;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -43,11 +61,11 @@ body {
 
 .navbar {
   display: flex;
-  background-color: black; }
+  background-color: white; }
   .navbar ul {
     justify-content: center; }
   .navbar a {
-    color: white;
+    color: #252525;
     font-size: 1.3em; }
   .navbar .navbar-toggle {
     background-color: white; }

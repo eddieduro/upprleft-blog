@@ -996,12 +996,14 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         var el5 = dom.createElement("a");
         dom.setAttribute(el5, "class", "navbar-brand");
         dom.setAttribute(el5, "href", "/");
+        dom.setAttribute(el5, "class", "logo");
         var el6 = dom.createTextNode("UPPRLEFT");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n           ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("li");
+        dom.setAttribute(el5, "id", "contact-link");
         var el6 = dom.createElement("a");
         dom.setAttribute(el6, "href", "/contact");
         var el7 = dom.createTextNode("Contact");

@@ -1,4 +1,4 @@
-$dark_color: #fff;
+$dark_color: #252525;
 $default-font: 'Fira Sans', sans-serif;
 $quote-font: 'Karla', sans-serif;
 $article-font: 'Oswald', sans-serif;
@@ -10,29 +10,47 @@ h1, h2, h3{
 body{
   overflow-x: hidden;
 }
+.logo{
+  background: url('../images/upprleft-logo.png') no-repeat;
+  position: absolute;
+  background-size: contain;
+  display: block;
+  height: 58px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+  text-indent: -9999px;
+  padding: 0;
+  border: none;
+  margin-top: 20px;
+}
+#contact-link {
+  margin-left: 60px;
+}
 .navbar-nav {
   width: 100%;
   text-align: center;
+  color: $dark_color;
   > li, a {
     float: none;
     display: inline-block;
-    color: white;
+    color: $dark_color;
     font-size: 1.3em;
     text-decoration: none;
     a{
       &:hover{
-        color: white;
+        color: $dark_color;
         background-color: inherit;
       }
       &:before{
         content: "";
-        color: white;
+        color: $dark_color;
         position: absolute;
         width: 100%;
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #fff;
+        background-color: $dark_color;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -57,13 +75,13 @@ body{
 }
 .navbar {
   display: flex;
-  background-color: black;
+  background-color: white;
   ul
   {
     justify-content: center;
   }
   a {
-    color: white;
+    color: $dark_color;
     font-size: 1.3em;
   }
   .navbar-toggle {
@@ -185,7 +203,7 @@ body{
   h2{
     font-size: 3em;
     margin-left: 15px;
-    margin-top: 50px; 
+    margin-top: 50px;
     letter-spacing: .3em;
     color: black;
   }
