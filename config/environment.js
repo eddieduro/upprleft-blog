@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'stumptown-beans',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://stumptownblog.firebaseio.com/',
+    firebase: 'https://upprleftblog.firebaseio.com',
     baseURL: '/',
     locationType: 'auto',
     disqus: {
