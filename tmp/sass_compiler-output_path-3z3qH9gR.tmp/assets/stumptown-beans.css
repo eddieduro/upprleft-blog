@@ -21,6 +21,28 @@ body {
 
 #contact-link {
   margin-left: 60px; }
+  #contact-link a:hover {
+    color: #252525;
+    background-color: inherit; }
+  #contact-link a:before {
+    content: "";
+    color: #252525;
+    position: absolute;
+    width: 90%;
+    margin-left: 5px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #252525;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #contact-link a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
 
 .navbar-nav {
   width: 100%;
@@ -72,7 +94,9 @@ body {
 
 .navbar-bottom {
   border-radius: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 30px; }
 
 .titleBar {
   color: #fff;
