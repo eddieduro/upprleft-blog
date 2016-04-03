@@ -132,6 +132,9 @@ body {
   height: auto;
   max-height: 1200px; }
 
+/*******************
+index img gallery
+*******************/
 .row {
   display: flex;
   flex-wrap: wrap; }
@@ -139,18 +142,44 @@ body {
     flex: 2 50%; }
     .row .postTease:nth-child(1) {
       flex: 1 70%; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(1) {
+          flex: 1 100%;
+          font-size: .8em; } }
     .row .postTease:nth-child(2) {
       flex: 2 30%; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(2) {
+          flex: 1 100%;
+          font-size: .8em; } }
     .row .postTease:nth-child(3) {
       flex: 2 30%;
       height: 300px; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(3) {
+          flex: 1 100%;
+          height: auto;
+          font-size: .8em; } }
     .row .postTease:nth-child(4) {
       flex: 2 70%; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(4) {
+          flex: 1 100%;
+          font-size: .8em; } }
     .row .postTease:nth-child(5) {
       flex: 2 70%;
       height: 300px; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(5) {
+          flex: 1 100%;
+          height: auto;
+          font-size: .8em; } }
     .row .postTease:nth-child(6) {
       flex: 2 30%; }
+      @media (max-width: 700px) {
+        .row .postTease:nth-child(6) {
+          flex: 1 100%;
+          font-size: .8em; } }
     .row .postTease .img {
       display: inline-block;
       position: relative;
