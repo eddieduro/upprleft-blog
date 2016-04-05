@@ -133,6 +133,10 @@ body{
     position: absolute;
     margin-top: -250px;
     height: 150px;
+    @media(max-width: 500px){
+      height: 90px;
+      margin-top: -100px;
+    }
     .titleBarInner{
       display: flex;
       justify-content: center;
@@ -153,6 +157,9 @@ body{
   color: white;
   margin: 0 auto;
   cursor: pointer;
+  @media(max-width: 500px){
+    margin-top: 220px;
+  }
   .fa{
     background-color: rgba(0,0,0,0.8);
     padding: 4px;
@@ -163,6 +170,9 @@ body{
   width: 100%;
   height: auto;
   max-height: 1200px;
+  @media(max-width: 500px){
+    margin-top: 130px;
+  }
 }
 /*******************
 index img gallery
@@ -260,6 +270,9 @@ index img gallery
 .pageBreak {
   color: grey;
   padding-bottom: 50px;
+  @media(max-width: 500px){
+    margin-top: -200px;
+  }
   h3{
     font-weight: 300;
   }
