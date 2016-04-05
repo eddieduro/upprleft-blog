@@ -118,8 +118,14 @@ body {
     justify-content: center; }
     .titleBar .titleBarInner .title {
       font-size: 3em; }
+      @media (max-width: 500px) {
+        .titleBar .titleBarInner .title {
+          font-size: 2em; } }
     .titleBar .titleBarInner .subtitle {
-      font-size: 2em; }
+      font-size: 1.7em; }
+      @media (max-width: 500px) {
+        .titleBar .titleBarInner .subtitle {
+          font-size: 1.2em; } }
 
 .arrows {
   display: flex;
