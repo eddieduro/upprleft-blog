@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-WHWgTY5R.tmp/0/utils/disqus-cache.js

@@ -65,10 +65,11 @@ body{
     float: none;
     display: inline-block;
     color: $dark_color;
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
     top: 10px;
     a{
+      top: 0px;
       &:hover{
         color: $dark_color;
         background-color: inherit;

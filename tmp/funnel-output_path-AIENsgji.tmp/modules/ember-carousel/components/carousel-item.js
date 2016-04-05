@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-y6SEBaUF.tmp/0/components/carousel-item.js

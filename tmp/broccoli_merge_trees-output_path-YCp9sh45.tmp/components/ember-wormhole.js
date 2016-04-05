@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/node_modules/ember-wormhole/app/components/ember-wormhole.js
