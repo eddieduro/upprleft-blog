@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-Q2CinUzP.tmp/0/serializers/firebase.js

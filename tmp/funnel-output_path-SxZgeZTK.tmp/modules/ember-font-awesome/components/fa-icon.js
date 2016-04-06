@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-niidjo8t.tmp/0/components/fa-icon.js

@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-zfsnAA83.tmp/0/components/ember-wormhole.js

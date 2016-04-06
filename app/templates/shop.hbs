@@ -1,15 +1,18 @@
 {{#if session.isAuthenticated class='activeUser'}}
 <div class="product-grid">
     {{#each model as |product|}}
-    <div class="product">
-      <div class="product-img">
-        <img src={{product.image}} alt="" />
+      <div class="product">
+        <div class="product-img">
+          <img src={{product.image}} alt="" />
+        </div>
+        <div class="product-content">
+          {{#link-to 'shop.product' product.id}}<h3 class='product' {{action 'toggleModal'}}> {{product.name}} | ${{product.price}}</h3>{{/link-to}}
+
+          <button {{action 'add'}}>Add to Cart</button>
+        </div>
       </div>
-      <div class="product-content">
-        <h3 class='product'>{{product.name}}</h3>
-      </div>
-    </div>
     {{/each}}
+    <p{{action "signOut"}}> Sign out</p>
 </div>
 {{else}}
 <div class="login-section">
@@ -21,3 +24,9 @@
   </div>
 </div>
 {{/if}}
+
+
+
+
+
+{{outlet modal}}

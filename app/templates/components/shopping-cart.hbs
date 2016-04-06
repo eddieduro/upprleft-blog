@@ -1,0 +1,6 @@
+<ul>
+  {{#each shoppingCart.products as |product index|}}
+    <img src={{product.content.[0]._data.image}} alt={{product.content.[0]._data.name}} />
+    <h3>{{product.content.[0]._data.name}} | {{product.content.[0]._data.company}}</h3>
+  {{/each}}
+</ul>

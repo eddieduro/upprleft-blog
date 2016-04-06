@@ -11,7 +11,10 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('comment', {path: '/comment/:comment_id'});
-  this.route('shop');
+  this.route('shop', function(){
+    this.route('product', { path: '/product/:product_id' });
+  });
+  this.route('cart');
 });
 
 export default Router;

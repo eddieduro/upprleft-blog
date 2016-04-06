@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/simple_replace-tmp_cache_dir-Bmc6dnGQ.tmp/0

@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/broccoli_merge_trees-input_base_path-h2VRY8Wp.tmp/1/stumptown-beans/tests/app.jshint.js
