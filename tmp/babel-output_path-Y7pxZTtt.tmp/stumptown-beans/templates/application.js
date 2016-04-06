@@ -152,11 +152,64 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
           "loc": {
             "source": null,
             "start": {
-              "line": 22,
+              "line": 10,
+              "column": 8
+            },
+            "end": {
+              "line": 14,
+              "column": 8
+            }
+          },
+          "moduleName": "stumptown-beans/templates/application.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("        ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1, "class", "profile-pic");
+          dom.setAttribute(el1, "class", "pull-right");
+          var el2 = dom.createTextNode("\n          ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("img");
+          dom.setAttribute(el2, "alt", "profile picture");
+          dom.setAttribute(el2, "class", "profile-pic");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n        ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element0 = dom.childAt(fragment, [1, 1]);
+          var morphs = new Array(1);
+          morphs[0] = dom.createAttrMorph(element0, 'src');
+          return morphs;
+        },
+        statements: [["attribute", "src", ["get", "session.currentUser.profileImageURL", ["loc", [null, [12, 21], [12, 56]]]]]],
+        locals: [],
+        templates: []
+      };
+    })();
+    var child5 = (function () {
+      return {
+        meta: {
+          "fragmentReason": false,
+          "revision": "Ember@2.4.4",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 27,
               "column": 16
             },
             "end": {
-              "line": 22,
+              "line": 27,
               "column": 44
             }
           },
@@ -194,7 +247,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
             "column": 0
           },
           "end": {
-            "line": 27,
+            "line": 32,
             "column": 0
           }
         },
@@ -255,7 +308,11 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         var el6 = dom.createComment("");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n      ");
+        var el5 = dom.createTextNode("\n");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createComment("");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("      ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
@@ -322,19 +379,20 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0, 1, 1, 1]);
-        var morphs = new Array(6);
-        morphs[0] = dom.createMorphAt(dom.childAt(element0, [1]), 0, 0);
-        morphs[1] = dom.createMorphAt(dom.childAt(element0, [3]), 0, 0);
-        morphs[2] = dom.createMorphAt(dom.childAt(element0, [7]), 0, 0);
-        morphs[3] = dom.createMorphAt(dom.childAt(element0, [9]), 0, 0);
-        morphs[4] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
-        morphs[5] = dom.createMorphAt(dom.childAt(fragment, [6, 1, 1, 1]), 1, 1);
+        var element1 = dom.childAt(fragment, [0, 1, 1, 1]);
+        var morphs = new Array(7);
+        morphs[0] = dom.createMorphAt(dom.childAt(element1, [1]), 0, 0);
+        morphs[1] = dom.createMorphAt(dom.childAt(element1, [3]), 0, 0);
+        morphs[2] = dom.createMorphAt(dom.childAt(element1, [7]), 0, 0);
+        morphs[3] = dom.createMorphAt(dom.childAt(element1, [9]), 0, 0);
+        morphs[4] = dom.createMorphAt(element1, 11, 11);
+        morphs[5] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
+        morphs[6] = dom.createMorphAt(dom.childAt(fragment, [6, 1, 1, 1]), 1, 1);
         return morphs;
       },
-      statements: [["block", "link-to", ["about"], [], 0, null, ["loc", [null, [5, 12], [5, 52]]]], ["block", "link-to", ["about"], [], 1, null, ["loc", [null, [6, 12], [6, 49]]]], ["block", "link-to", ["contact"], [], 2, null, ["loc", [null, [8, 30], [8, 71]]]], ["block", "link-to", ["shop"], [], 3, null, ["loc", [null, [9, 12], [9, 47]]]], ["content", "outlet", ["loc", [null, [15, 2], [15, 12]]]], ["block", "link-to", ["index"], [], 4, null, ["loc", [null, [22, 16], [22, 56]]]]],
+      statements: [["block", "link-to", ["about"], [], 0, null, ["loc", [null, [5, 12], [5, 52]]]], ["block", "link-to", ["about"], [], 1, null, ["loc", [null, [6, 12], [6, 49]]]], ["block", "link-to", ["contact"], [], 2, null, ["loc", [null, [8, 30], [8, 71]]]], ["block", "link-to", ["shop"], [], 3, null, ["loc", [null, [9, 12], [9, 47]]]], ["block", "if", [["get", "session.isAuthenticated", ["loc", [null, [10, 14], [10, 37]]]]], [], 4, null, ["loc", [null, [10, 8], [14, 15]]]], ["content", "outlet", ["loc", [null, [20, 2], [20, 12]]]], ["block", "link-to", ["index"], [], 5, null, ["loc", [null, [27, 16], [27, 56]]]]],
       locals: [],
-      templates: [child0, child1, child2, child3, child4]
+      templates: [child0, child1, child2, child3, child4, child5]
     };
   })());
 });

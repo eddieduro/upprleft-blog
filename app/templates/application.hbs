@@ -7,6 +7,11 @@
         <a class="navbar-brand" href="/" class='logo'>UPPRLEFT</a>
         <li id="contact-link">{{#link-to 'contact'}}CONTACT{{/link-to}}</li>
         <li>{{#link-to 'shop'}}SHOP{{/link-to}}</li>
+        {{#if session.isAuthenticated }}
+        <div class='profile-pic' class='pull-right'>
+          <img src={{session.currentUser.profileImageURL}} alt='profile picture' class='profile-pic'>
+        </div>
+        {{/if}}
       </ul>
     </div><!--/.nav-collapse -->
   </div>

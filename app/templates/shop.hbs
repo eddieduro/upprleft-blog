@@ -1,15 +1,4 @@
 {{#if session.isAuthenticated class='activeUser'}}
-{{log session.currentUser}}
-{{liquid-outlet}}
-<div class="sidebar">
-  <div class="sidebar-content">
-    <img src={{session.currentUser.profileImageURL}} alt='profile picture' class='profile-pic'>
-    <br>
-    <span>Hi, {{session.currentUser.displayName}}</span>
-    <br>
-    <a{{action "signOut"}}>Sign out</a>
-  </div>
-</div>
 <div class="product-grid">
     {{#each model as |product|}}
     <div class="product">
