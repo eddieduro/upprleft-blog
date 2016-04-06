@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/template_compiler-tmp_cache_dir-Y7lOmANC.tmp/0

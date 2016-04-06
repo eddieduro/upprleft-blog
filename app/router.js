@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('comment', {path: '/comment/:comment_id'});
+  this.route('shop');
 });
 
 export default Router;

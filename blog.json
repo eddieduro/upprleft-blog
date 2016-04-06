@@ -1,33 +1,73 @@
 {
-  "posts": [{
-    "title": "Best Coffee for Slackers",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma galo medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/FWX6GJJ0WV.jpg",
-    "date": "03/16/2016"
+  "posts" : [ {
+    "body" : "<div class='row'>\n  <div class='col-md-8'>\n    <p>Lorizzle ipsum dolor sit , consectetizzle adipiscing elit. I saw beyonces tizzles and my pizzle went crizzle doggy velizzle, sheezy volutpizzle, dang hizzle, gravida vizzle, arcu. Pellentesque dang tortor</p>\n    <p>Lorizzle ipsum dolor sit , consectetizzle adipiscing elit. I saw beyonces tizzles and my pizzle went crizzle doggy velizzle, sheezy volutpizzle, dang hizzle, gravida vizzle, arcu. Pellentesque dang tortor</p>\n    <p>Lorizzle ipsum dolor sit , consectetizzle adipiscing elit. I saw beyonces tizzles and my pizzle went crizzle doggy velizzle, sheezy volutpizzle, dang hizzle, gravida vizzle, arcu. Pellentesque dang tortor</p>\n  </div>\n  <div class='col-md-4'>\n    <blockquote cite='snippet'>I saw beyonces tizzles and my pizzle went crizzle doggy velizzle, sheezy volutpizzle, dang hizzle, gravida vizzle, arcu.</blockquote>\n  </div>\n</div>\n<div class='row imgGrid'>\n  <div class='col-sm-12'>\n    <img src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/MH7HU7WRB2.jpg' alt='' id='articleImg1' />\n    <img src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/MH7HU7WRB2.jpg' alt='' id='articleImg2' />\n    <img src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/MH7HU7WRB2.jpg' alt='' id='articleImg3' />\n<img src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/MH7HU7WRB2.jpg' alt='' id='articleImg4' />\n  </div>\n</div>\n<div class='row'>\n  <div class='col-md-4'>\n    <blockquote cite='snippet'>Proin egizzle fizzle. Sheezy sit gizzle things ghetto izzle tincidunt pellentesque. </blockquote>\n  </div>\n  <div class='col-md-8'>\n    <p>Proin egizzle fizzle. Sheezy sit gizzle things ghetto izzle tincidunt pellentesque. In dang erizzle. Away funky fresh i'm in the shizzle, i saw beyonces tizzles and my pizzle went crizzle shizzle my nizzle crocodizzle izzle, vulputate vitae, own yo' izzle, daahng dawg. Cras sizzle crazy mammasay mammasa mamma oo sa.</p>\n    <p>Proin egizzle fizzle. Sheezy sit gizzle things ghetto izzle tincidunt pellentesque. In dang erizzle. Away funky fresh i'm in the shizzle, i saw beyonces tizzles and my pizzle went crizzle shizzle my nizzle crocodizzle izzle, vulputate vitae, own yo' izzle, daahng dawg. Cras sizzle crazy mammasay mammasa mamma oo sa.</p>\n  </div>\n</div>\n",
+    "date" : "",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/L07UXRLREE.jpg",
+    "title" : "Benefits of coffee"
+  }, {
+    "body" : "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma galo medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
+    "date" : "03/16/2016",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/ZM7EROU6P0.jpg",
+    "title" : "How to Mainline Your Coffee"
+  }, {
+    "body" : "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
+    "date" : "03/16/2016",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/280h/M4PI6CXDDP.jpg",
+    "title" : "Best Coffee for Barbeque"
+  }, {
+    "body" : "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
+    "date" : "03/16/2016",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/6UHHE19YG7.jpg",
+    "title" : "Smart Coffee"
+  }, {
+    "body" : "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
+    "comments" : {
+      "-KEDnr0Un6gzTJn6gF0f" : true
+    },
+    "date" : "03/16/2016",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/6IFQRKBY19.jpg",
+    "title" : "Adventures in Coffee Drinking."
+  }, {
+    "body" : "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
+    "date" : "03/16/2016",
+    "image" : "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/364Z71GTHR.jpg",
+    "title" : "Bulletproof Coffee Not So Bulletproof."
+  }],
+  "products": [{
+    "name": "Coaster Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
+  }, {
+    "name": "Coaster Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
   },{
-    "title": "How to Mainline Your Coffee",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma galo medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/ZM7EROU6P0.jpg",
-    "date": "03/16/2016"
+    "name": "Coase Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
   },{
-    "title": "Best Coffee for Barbeque",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/280h/M4PI6CXDDP.jpg",
-    "date": "03/16/2016"
+    "name": "Coase Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
   },{
-    "title": "Smart Coffee",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/6UHHE19YG7.jpg",
-    "date": "03/16/2016"
+    "name": "Coase Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
   },{
-    "title": "Adventures in Coffee Drinking.",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/6IFQRKBY19.jpg",
-    "date": "03/16/2016"
-  },{
-    "title": "Author Finds Out the Hard Way, Bulletproof Coffee Not So Bulletproof.",
-    "body": "Coffee et black, steamed shop steamed as rich irish coffee wings. Spoon redeye, steamed mocha crema aroma  medium milk cup white caffeine. Id aromatic, black that macchiato cappuccino rich aftertaste and cortado cappuccino skinny. Aged crema pumpkin spice, half and half fair trade eu java so seasonal. Crema medium redeye flavour roast sweet organic. Steamed, robust lungo americano saucer id shop to g",
-    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/364Z71GTHR.jpg",
-    "date": "03/16/2016"
+    "name": "Coase Set",
+    "company": "Quarter Twenty",
+    "price": "20.00",
+    "quantity": "10",
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
   }]
 }

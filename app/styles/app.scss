@@ -9,7 +9,11 @@ h1, h2, h3{
   font-family: $default-font;
   font-weight: 500;
 }
+html {
+  height: 100%;
+}
 body{
+  height: 100%;
   overflow-x: hidden;
 }
 .logo{
@@ -125,6 +129,9 @@ body{
   margin-bottom: 0;
   border-top: 1px solid rgba(0,0,0,0.2);
   margin-top: 30px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
   .titleBar{
     color: #fff;
@@ -399,8 +406,59 @@ textarea {
   width: 75%;
   height: 60px;
 }
-
-
+/***************
+User logged in
+****************/
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  background-color: grey;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  .profile-pic{
+    margin-top: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+.product-grid{
+  margin-left: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .product{
+    flex: 1 33%;
+    text-align: center;
+    h3{
+      text-align: center;
+    }
+    img{
+      height: 300px;
+    }
+  }
+}
+/***************
+Login Section
+****************/
+.login-section{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.login-card{
+  margin-top: 300px;
+  border: 1px solid rgba(20,20,20,0.2);
+  padding: 15px;
+}
+.social-login {
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+}
 /**************
 Admin section
 *************/

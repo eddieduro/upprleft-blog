@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/broccoli_merge_trees-input_base_path-IUuLZ6Tx.tmp/1/attr.js

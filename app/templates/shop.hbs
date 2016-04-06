@@ -1,0 +1,34 @@
+{{#if session.isAuthenticated class='activeUser'}}
+{{log session.currentUser}}
+{{liquid-outlet}}
+<div class="sidebar">
+  <div class="sidebar-content">
+    <img src={{session.currentUser.profileImageURL}} alt='profile picture' class='profile-pic'>
+    <br>
+    <span>Hi, {{session.currentUser.displayName}}</span>
+    <br>
+    <a{{action "signOut"}}>Sign out</a>
+  </div>
+</div>
+<div class="product-grid">
+    {{#each model as |product|}}
+    <div class="product">
+      <div class="product-img">
+        <img src={{product.image}} alt="" />
+      </div>
+      <div class="product-content">
+        <h3 class='product'>{{product.name}}</h3>
+      </div>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+<div class="login-section">
+  <div class="login-card">
+    <h2>Please Log in to continue</h2>
+    <a {{action "signIn" "twitter"}} class="btn social-login">{{fa-icon "twitter"}} Sign In with Twitter</a>
+    <br>
+    <a {{action "signIn" "google"}} class=" btn social-login">{{fa-icon "google"}} Sign In with Google</a>
+  </div>
+</div>
+{{/if}}
