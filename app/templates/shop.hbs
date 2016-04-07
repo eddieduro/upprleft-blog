@@ -10,6 +10,7 @@
         </div>
         <div class="product-content">
           {{#link-to 'shop.product' product.id}}<h3 class='product' {{action 'toggleModal'}}> {{product.name}} | ${{product.price}}</h3>{{/link-to}}
+          {{rating-tile product=product}}
         </div>
       </div>
     {{/each}}

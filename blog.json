@@ -62,12 +62,38 @@
     "company": "Quarter Twenty",
     "price": "20.00",
     "quantity": "10",
-    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg",
+    "ratings": {
+      "2": true
+    }
   },{
     "name": "Coase Set",
     "company": "Quarter Twenty",
     "price": "20.00",
     "quantity": "10",
-    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg"
+    "image": "http://cdn.shopify.com/s/files/1/0658/4601/products/P1140587.jpg",
+    "ratings": {
+      "0": true,
+      "1": true
+    }
+  }],
+  "ratings": [{
+    "name": "jim",
+    "rating": 1,
+    "product": {
+      "0": true
+    }
+  },{
+    "name": "bob",
+    "rating": 3,
+    "product": {
+      "0": true
+    }
+  }, {
+    "name": "chris",
+    "rating": 2,
+    "product": {
+      "0": true
+    }
   }]
 }

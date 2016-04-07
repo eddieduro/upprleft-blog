@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-Zp0PHB4e.tmp/0/index.js

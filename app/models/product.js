@@ -5,5 +5,6 @@ export default DS.Model.extend({
   company: DS.attr('string'),
   price: DS.attr('number'),
   quantity: DS.attr('number'),
-  image: DS.attr('string')
+  image: DS.attr('string'),
+  ratings: DS.hasMany('rating', {async: true})
 });
