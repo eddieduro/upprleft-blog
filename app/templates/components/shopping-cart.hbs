@@ -1,6 +1,11 @@
+{{#if (eq shoppingCart.totalPrice 0) }}
+<h4>Nothing in your cart!</h4>
+{{else}}
+<h4>total price:  {{shoppingCart.totalPrice}}</h4>
+{{/if}}
 <ul>
-  {{#each shoppingCart.products as |product index|}}
-    <img src={{product.content.[0]._data.image}} alt={{product.content.[0]._data.name}} />
-    <h3>{{product.content.[0]._data.name}} | {{product.content.[0]._data.company}}</h3>
+  {{#each shoppingCart.products as |product|}}
+    <img src={{product.image}} alt={{product.name}} />
+    <h3>{{product.name}} | {{product.company}}</h3>
   {{/each}}
 </ul>

@@ -1,0 +1,1 @@
+/Users/Guest/Desktop/upprleft-blog/tmp/funnel-input_base_path-rZ0Hav8D.tmp/0/adapters/firebase.js

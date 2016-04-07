@@ -2,9 +2,7 @@
 
 export default Ember.Route.extend({
   model(){
-    return this.store.query('product',{
-      limitToFirst: 6
-    });
+    return this.store.findAll('product')
   },
   actions: {
     toggleModal() {

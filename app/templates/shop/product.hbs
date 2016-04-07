@@ -1,12 +1,3 @@
 <div {{action 'toggleModal'}} class="modal-fog">
-  <h3>{{#link-to 'shop'}}X{{/link-to}}</h3>
-  <div class="modal-frame">
-      <div class="modal-title">
-        <img src={{model.image}} alt="" class='modal-img' />
-      </div>
-      <div class="modal-body">
-        <p>{{model.name}} by, {{model.company}}</p>
-        <button {{action 'add'}}>Add to Cart</button>
-      </div>
-  </div>
+  {{product-tile product=model}}
 </div>

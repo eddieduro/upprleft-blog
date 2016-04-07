@@ -10,8 +10,6 @@
         </div>
         <div class="product-content">
           {{#link-to 'shop.product' product.id}}<h3 class='product' {{action 'toggleModal'}}> {{product.name}} | ${{product.price}}</h3>{{/link-to}}
-
-          <button {{action 'add'}}>Add to Cart</button>
         </div>
       </div>
     {{/each}}
@@ -31,4 +29,4 @@
 
 
 
-{{liquid-outlet class='transition-container'}}
+{{outlet}}

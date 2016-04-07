@@ -1,0 +1,10 @@
+<h3>{{#link-to 'shop'}}X{{/link-to}}</h3>
+<div class="modal-frame">
+    <div class="modal-title">
+      <img src={{product.image}} alt="" class='modal-img' />
+    </div>
+    <div class="modal-body">
+      <p>{{product.name}} by, {{product.company}}</p>
+      <button {{action 'add' product}}>Add to Cart</button>
+    </div>
+</div>
