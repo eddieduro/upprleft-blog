@@ -2017,7 +2017,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
             "column": 0
           },
           "end": {
-            "line": 34,
+            "line": 33,
             "column": 0
           }
         },
@@ -2142,7 +2142,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         var el5 = dom.createTextNode(" ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n\n    ");
+        var el4 = dom.createTextNode("\n\n    ");
         dom.appendChild(el3, el4);
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n");
