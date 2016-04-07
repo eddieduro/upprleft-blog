@@ -381,6 +381,9 @@ User logged in
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media (max-width: 600px) {
+    .product-grid {
+      margin-top: 150px; } }
   .product-grid .product {
     flex: 1 33%;
     text-align: center; }

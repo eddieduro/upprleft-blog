@@ -440,6 +440,9 @@ User logged in
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  @media(max-width: 600px){
+    margin-top: 150px;
+  }
   .product{
     flex: 1 33%;
     text-align: center;
