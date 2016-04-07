@@ -24,12 +24,14 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("  ");
+          dom.appendChild(el0, el1);
           var el1 = dom.createElement("h4");
           dom.setAttribute(el1, "class", "text-center");
           var el2 = dom.createTextNode("Nothing in your cart!");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
+          var el1 = dom.createTextNode("\n  ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("h4");
           dom.setAttribute(el1, "class", "text-center");
