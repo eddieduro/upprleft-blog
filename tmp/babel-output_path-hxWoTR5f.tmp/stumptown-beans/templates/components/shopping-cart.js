@@ -3,19 +3,16 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
     var child0 = (function () {
       return {
         meta: {
-          "fragmentReason": {
-            "name": "missing-wrapper",
-            "problems": ["multiple-nodes"]
-          },
+          "fragmentReason": false,
           "revision": "Ember@2.4.4",
           "loc": {
             "source": null,
             "start": {
-              "line": 1,
+              "line": 2,
               "column": 0
             },
             "end": {
-              "line": 4,
+              "line": 5,
               "column": 0
             }
           },
@@ -59,11 +56,11 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
           "loc": {
             "source": null,
             "start": {
-              "line": 4,
+              "line": 5,
               "column": 0
             },
             "end": {
-              "line": 6,
+              "line": 7,
               "column": 0
             }
           },
@@ -92,7 +89,7 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
           morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
           return morphs;
         },
-        statements: [["content", "shoppingCart.totalPrice", ["loc", [null, [5, 19], [5, 46]]]]],
+        statements: [["content", "shoppingCart.totalPrice", ["loc", [null, [6, 19], [6, 46]]]]],
         locals: [],
         templates: []
       };
@@ -105,12 +102,12 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
           "loc": {
             "source": null,
             "start": {
-              "line": 8,
-              "column": 2
+              "line": 9,
+              "column": 4
             },
             "end": {
-              "line": 12,
-              "column": 2
+              "line": 15,
+              "column": 4
             }
           },
           "moduleName": "stumptown-beans/templates/components/shopping-cart.hbs"
@@ -121,25 +118,32 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("  ");
+          var el1 = dom.createTextNode("    ");
           dom.appendChild(el0, el1);
-          var el1 = dom.createElement("h4");
-          var el2 = dom.createTextNode("X");
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1, "class", "cart-content");
+          var el2 = dom.createTextNode("\n      ");
           dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("img");
-          dom.setAttribute(el1, "class", "checkout-image");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n    ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("h5");
-          var el2 = dom.createComment("");
+          var el2 = dom.createElement("h4");
+          var el3 = dom.createTextNode("X");
+          dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode(" | ");
+          var el2 = dom.createTextNode("\n      ");
           dom.appendChild(el1, el2);
-          var el2 = dom.createComment("");
+          var el2 = dom.createElement("img");
+          dom.setAttribute(el2, "class", "checkout-image");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n      ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("h5");
+          var el3 = dom.createComment("");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode(" | ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createComment("");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n    ");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
           var el1 = dom.createTextNode("\n");
@@ -148,17 +152,18 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
           var element0 = dom.childAt(fragment, [1]);
-          var element1 = dom.childAt(fragment, [3]);
-          var element2 = dom.childAt(fragment, [5]);
+          var element1 = dom.childAt(element0, [1]);
+          var element2 = dom.childAt(element0, [3]);
+          var element3 = dom.childAt(element0, [5]);
           var morphs = new Array(5);
-          morphs[0] = dom.createElementMorph(element0);
-          morphs[1] = dom.createAttrMorph(element1, 'src');
-          morphs[2] = dom.createAttrMorph(element1, 'alt');
-          morphs[3] = dom.createMorphAt(element2, 0, 0);
-          morphs[4] = dom.createMorphAt(element2, 2, 2);
+          morphs[0] = dom.createElementMorph(element1);
+          morphs[1] = dom.createAttrMorph(element2, 'src');
+          morphs[2] = dom.createAttrMorph(element2, 'alt');
+          morphs[3] = dom.createMorphAt(element3, 0, 0);
+          morphs[4] = dom.createMorphAt(element3, 2, 2);
           return morphs;
         },
-        statements: [["element", "action", ["remove", ["get", "product", ["loc", [null, [9, 24], [9, 31]]]]], [], ["loc", [null, [9, 6], [9, 33]]]], ["attribute", "src", ["get", "product.image", ["loc", [null, [10, 15], [10, 28]]]]], ["attribute", "alt", ["get", "product.name", ["loc", [null, [10, 37], [10, 49]]]]], ["content", "product.name", ["loc", [null, [11, 8], [11, 24]]]], ["content", "product.company", ["loc", [null, [11, 27], [11, 46]]]]],
+        statements: [["element", "action", ["remove", ["get", "product", ["loc", [null, [11, 28], [11, 35]]]]], [], ["loc", [null, [11, 10], [11, 37]]]], ["attribute", "src", ["get", "product.image", ["loc", [null, [12, 17], [12, 30]]]]], ["attribute", "alt", ["get", "product.name", ["loc", [null, [12, 39], [12, 51]]]]], ["content", "product.name", ["loc", [null, [13, 10], [13, 26]]]], ["content", "product.company", ["loc", [null, [13, 29], [13, 48]]]]],
         locals: ["product"],
         templates: []
       };
@@ -166,8 +171,7 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
     return {
       meta: {
         "fragmentReason": {
-          "name": "missing-wrapper",
-          "problems": ["wrong-type", "multiple-nodes"]
+          "name": "triple-curlies"
         },
         "revision": "Ember@2.4.4",
         "loc": {
@@ -177,7 +181,7 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
             "column": 0
           },
           "end": {
-            "line": 14,
+            "line": 18,
             "column": 0
           }
         },
@@ -189,12 +193,24 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("ul");
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "container");
         var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
         var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "cart-grid");
+        var el3 = dom.createTextNode("\n");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("  ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -202,13 +218,13 @@ define("stumptown-beans/templates/components/shopping-cart", ["exports"], functi
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element4 = dom.childAt(fragment, [0]);
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [1]), 1, 1);
-        dom.insertBoundary(fragment, 0);
+        morphs[0] = dom.createMorphAt(element4, 1, 1);
+        morphs[1] = dom.createMorphAt(dom.childAt(element4, [3]), 1, 1);
         return morphs;
       },
-      statements: [["block", "if", [["subexpr", "eq", [["get", "shoppingCart.totalPrice", ["loc", [null, [1, 10], [1, 33]]]], 0], [], ["loc", [null, [1, 6], [1, 36]]]]], [], 0, 1, ["loc", [null, [1, 0], [6, 7]]]], ["block", "each", [["get", "shoppingCart.products", ["loc", [null, [8, 10], [8, 31]]]]], [], 2, null, ["loc", [null, [8, 2], [12, 11]]]]],
+      statements: [["block", "if", [["subexpr", "eq", [["get", "shoppingCart.totalPrice", ["loc", [null, [2, 10], [2, 33]]]], 0], [], ["loc", [null, [2, 6], [2, 36]]]]], [], 0, 1, ["loc", [null, [2, 0], [7, 7]]]], ["block", "each", [["get", "shoppingCart.products", ["loc", [null, [9, 12], [9, 33]]]]], [], 2, null, ["loc", [null, [9, 4], [15, 13]]]]],
       locals: [],
       templates: [child0, child1, child2]
     };

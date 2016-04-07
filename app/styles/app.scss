@@ -475,6 +475,13 @@ checkout/cart
 .checkout-image{
   height: 200px;
 }
+.cart-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-content{
+
+}
 /**************
 Admin section
 *************/

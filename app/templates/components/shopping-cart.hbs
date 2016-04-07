@@ -1,13 +1,17 @@
+<div class="container">
 {{#if (eq shoppingCart.totalPrice 0) }}
 <h4 class='text-center'>Nothing in your cart!</h4>
 <h4 class='text-center'>Keep Shopping.</h4>
 {{else}}
 <h4>total price: $ {{shoppingCart.totalPrice}}.00</h4>
 {{/if}}
-<ul>
-  {{#each shoppingCart.products as |product|}}
-  <h4 {{action 'remove' product}}>X</h4>
-    <img src={{product.image}} alt={{product.name}} class='checkout-image'/>
-    <h5>{{product.name}} | {{product.company}}</h5>
-  {{/each}}
-</ul>
+  <div class='cart-grid'>
+    {{#each shoppingCart.products as |product|}}
+    <div class="cart-content">
+      <h4 {{action 'remove' product}}>X</h4>
+      <img src={{product.image}} alt={{product.name}} class='checkout-image'/>
+      <h5>{{product.name}} | {{product.company}}</h5>
+    </div>
+    {{/each}}
+  </div>
+</div>
