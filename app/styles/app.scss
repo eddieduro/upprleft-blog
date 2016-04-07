@@ -480,7 +480,7 @@ Modal section
   h3{
     position: absolute;
     margin-top: 181px;
-    margin-left: -153px;
+    margin-left: -293px;
     z-index: 2;
   }
 }
@@ -488,10 +488,10 @@ Modal section
     position: absolute;
     margin-top: 200px;
     border: 1px solid #333;
-    background: #ddd;
+    background: #eee;
     height: 200px;
     width: 200px;
-    margin-left: -140px;
+    margin-left: -280px;
   }
   .modal-title {
     position: absolute;
@@ -500,7 +500,14 @@ Modal section
     height:30px;
     text-align: center;
     border-bottom: 2px solid black;
+    img{
+      height: 500px;
+      display: block;
+    }
   }
   .modal-body {
     margin-top: 40px;
+    text-align: center;
+    position: absolute;
+    display: block;
   }

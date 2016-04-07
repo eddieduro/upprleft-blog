@@ -2,10 +2,11 @@
   <h3>{{#link-to 'shop'}}X{{/link-to}}</h3>
   <div class="modal-frame">
       <div class="modal-title">
-          {{model.name}} by, {{model.company}}
+        <img src={{model.image}} alt="" class='modal-img' />
       </div>
       <div class="modal-body">
-          <button {{action 'add'}}>Add to Cart</button>
+        <p>{{model.name}} by, {{model.company}}</p>
+        <button {{action 'add'}}>Add to Cart</button>
       </div>
   </div>
 </div>

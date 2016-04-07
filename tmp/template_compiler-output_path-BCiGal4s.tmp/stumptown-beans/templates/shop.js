@@ -9,11 +9,11 @@ export default Ember.HTMLBars.template((function() {
             "loc": {
               "source": null,
               "start": {
-                "line": 9,
+                "line": 12,
                 "column": 10
               },
               "end": {
-                "line": 9,
+                "line": 12,
                 "column": 136
               }
             },
@@ -47,9 +47,9 @@ export default Ember.HTMLBars.template((function() {
             return morphs;
           },
           statements: [
-            ["element","action",["toggleModal"],[],["loc",[null,[9,68],[9,92]]]],
-            ["content","product.name",["loc",[null,[9,94],[9,110]]]],
-            ["content","product.price",["loc",[null,[9,114],[9,131]]]]
+            ["element","action",["toggleModal"],[],["loc",[null,[12,68],[12,92]]]],
+            ["content","product.name",["loc",[null,[12,94],[12,110]]]],
+            ["content","product.price",["loc",[null,[12,114],[12,131]]]]
           ],
           locals: [],
           templates: []
@@ -62,11 +62,11 @@ export default Ember.HTMLBars.template((function() {
           "loc": {
             "source": null,
             "start": {
-              "line": 3,
+              "line": 6,
               "column": 4
             },
             "end": {
-              "line": 14,
+              "line": 17,
               "column": 4
             }
           },
@@ -130,9 +130,9 @@ export default Ember.HTMLBars.template((function() {
           return morphs;
         },
         statements: [
-          ["attribute","src",["get","product.image",["loc",[null,[6,21],[6,34]]]]],
-          ["block","link-to",["shop.product",["get","product.id",["loc",[null,[9,36],[9,46]]]]],[],0,null,["loc",[null,[9,10],[9,148]]]],
-          ["element","action",["add"],[],["loc",[null,[11,18],[11,34]]]]
+          ["attribute","src",["get","product.image",["loc",[null,[9,21],[9,34]]]]],
+          ["block","link-to",["shop.product",["get","product.id",["loc",[null,[12,36],[12,46]]]]],[],0,null,["loc",[null,[12,10],[12,148]]]],
+          ["element","action",["add"],[],["loc",[null,[14,18],[14,34]]]]
         ],
         locals: ["product"],
         templates: [child0]
@@ -141,7 +141,10 @@ export default Ember.HTMLBars.template((function() {
     return {
       meta: {
         "fragmentReason": {
-          "name": "triple-curlies"
+          "name": "missing-wrapper",
+          "problems": [
+            "multiple-nodes"
+          ]
         },
         "revision": "Ember@2.4.4",
         "loc": {
@@ -151,7 +154,7 @@ export default Ember.HTMLBars.template((function() {
             "column": 0
           },
           "end": {
-            "line": 17,
+            "line": 19,
             "column": 0
           }
         },
@@ -164,12 +167,8 @@ export default Ember.HTMLBars.template((function() {
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("div");
-        dom.setAttribute(el1,"class","product-grid");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("    ");
+        dom.setAttribute(el1,"class","flex-logout");
+        var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("p");
         var el3 = dom.createTextNode(" Sign out");
@@ -180,19 +179,27 @@ export default Ember.HTMLBars.template((function() {
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1,"class","product-grid");
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element8 = dom.childAt(fragment, [0]);
-        var element9 = dom.childAt(element8, [3]);
+        var element8 = dom.childAt(fragment, [0, 1]);
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(element8,1,1);
-        morphs[1] = dom.createElementMorph(element9);
+        morphs[0] = dom.createElementMorph(element8);
+        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]),1,1);
         return morphs;
       },
       statements: [
-        ["block","each",[["get","model",["loc",[null,[3,12],[3,17]]]]],[],0,null,["loc",[null,[3,4],[14,13]]]],
-        ["element","action",["signOut"],[],["loc",[null,[15,6],[15,26]]]]
+        ["element","action",["signOut"],[],["loc",[null,[3,4],[3,24]]]],
+        ["block","each",[["get","model",["loc",[null,[6,12],[6,17]]]]],[],0,null,["loc",[null,[6,4],[17,13]]]]
       ],
       locals: [],
       templates: [child0]
@@ -206,11 +213,11 @@ export default Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 17,
+            "line": 19,
             "column": 0
           },
           "end": {
-            "line": 26,
+            "line": 28,
             "column": 0
           }
         },
@@ -278,10 +285,10 @@ export default Ember.HTMLBars.template((function() {
         return morphs;
       },
       statements: [
-        ["element","action",["signIn","twitter"],[],["loc",[null,[21,7],[21,36]]]],
-        ["inline","fa-icon",["twitter"],[],["loc",[null,[21,62],[21,83]]]],
-        ["element","action",["signIn","google"],[],["loc",[null,[23,7],[23,35]]]],
-        ["inline","fa-icon",["google"],[],["loc",[null,[23,62],[23,82]]]]
+        ["element","action",["signIn","twitter"],[],["loc",[null,[23,7],[23,36]]]],
+        ["inline","fa-icon",["twitter"],[],["loc",[null,[23,62],[23,83]]]],
+        ["element","action",["signIn","google"],[],["loc",[null,[25,7],[25,35]]]],
+        ["inline","fa-icon",["google"],[],["loc",[null,[25,62],[25,82]]]]
       ],
       locals: [],
       templates: []
@@ -304,7 +311,7 @@ export default Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 33,
+          "line": 35,
           "column": 0
         }
       },
@@ -334,8 +341,8 @@ export default Ember.HTMLBars.template((function() {
       return morphs;
     },
     statements: [
-      ["block","if",[["get","session.isAuthenticated",["loc",[null,[1,6],[1,29]]]]],["class","activeUser"],0,1,["loc",[null,[1,0],[26,7]]]],
-      ["inline","outlet",[["get","modal",["loc",[null,[32,9],[32,14]]]]],[],["loc",[null,[32,0],[32,16]]]]
+      ["block","if",[["get","session.isAuthenticated",["loc",[null,[1,6],[1,29]]]]],["class","activeUser"],0,1,["loc",[null,[1,0],[28,7]]]],
+      ["inline","liquid-outlet",[],["class","transition-container"],["loc",[null,[34,0],[34,46]]]]
     ],
     locals: [],
     templates: [child0, child1]

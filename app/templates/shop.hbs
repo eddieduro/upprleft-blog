@@ -1,4 +1,7 @@
 {{#if session.isAuthenticated class='activeUser'}}
+<div class="flex-logout">
+  <p{{action "signOut"}}> Sign out</p>
+</div>
 <div class="product-grid">
     {{#each model as |product|}}
       <div class="product">
@@ -12,7 +15,6 @@
         </div>
       </div>
     {{/each}}
-    <p{{action "signOut"}}> Sign out</p>
 </div>
 {{else}}
 <div class="login-section">
@@ -29,4 +31,4 @@
 
 
 
-{{outlet modal}}
+{{liquid-outlet class='transition-container'}}
