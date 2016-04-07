@@ -153,11 +153,11 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
             "source": null,
             "start": {
               "line": 10,
-              "column": 12
+              "column": 31
             },
             "end": {
               "line": 10,
-              "column": 35
+              "column": 124
             }
           },
           "moduleName": "stumptown-beans/templates/application.hbs"
@@ -168,14 +168,18 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("CART");
+          var el1 = dom.createComment("");
           dom.appendChild(el0, el1);
           return el0;
         },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+          dom.insertBoundary(fragment, 0);
+          dom.insertBoundary(fragment, null);
+          return morphs;
         },
-        statements: [],
+        statements: [["inline", "fa-icon", ["shopping-cart"], ["size", "lg", "class", "cart"], ["loc", [null, [10, 74], [10, 124]]]]],
         locals: [],
         templates: []
       };
@@ -347,6 +351,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("li");
+        dom.setAttribute(el5, "class", "pull-right");
         var el6 = dom.createComment("");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -433,7 +438,7 @@ define("stumptown-beans/templates/application", ["exports"], function (exports) 
         morphs[7] = dom.createMorphAt(dom.childAt(fragment, [6, 1, 1, 1]), 1, 1);
         return morphs;
       },
-      statements: [["block", "link-to", ["about"], [], 0, null, ["loc", [null, [5, 12], [5, 52]]]], ["block", "link-to", ["about"], [], 1, null, ["loc", [null, [6, 12], [6, 49]]]], ["block", "link-to", ["contact"], [], 2, null, ["loc", [null, [8, 30], [8, 71]]]], ["block", "link-to", ["shop"], [], 3, null, ["loc", [null, [9, 12], [9, 47]]]], ["block", "link-to", ["cart"], [], 4, null, ["loc", [null, [10, 12], [10, 47]]]], ["block", "if", [["get", "session.isAuthenticated", ["loc", [null, [11, 14], [11, 37]]]]], [], 5, null, ["loc", [null, [11, 8], [15, 15]]]], ["content", "outlet", ["loc", [null, [21, 2], [21, 12]]]], ["block", "link-to", ["index"], [], 6, null, ["loc", [null, [28, 16], [28, 56]]]]],
+      statements: [["block", "link-to", ["about"], [], 0, null, ["loc", [null, [5, 12], [5, 52]]]], ["block", "link-to", ["about"], [], 1, null, ["loc", [null, [6, 12], [6, 49]]]], ["block", "link-to", ["contact"], [], 2, null, ["loc", [null, [8, 30], [8, 71]]]], ["block", "link-to", ["shop"], [], 3, null, ["loc", [null, [9, 12], [9, 47]]]], ["block", "link-to", ["cart"], ["class", "cart pull-right"], 4, null, ["loc", [null, [10, 31], [10, 136]]]], ["block", "if", [["get", "session.isAuthenticated", ["loc", [null, [11, 14], [11, 37]]]]], [], 5, null, ["loc", [null, [11, 8], [15, 15]]]], ["content", "outlet", ["loc", [null, [21, 2], [21, 12]]]], ["block", "link-to", ["index"], [], 6, null, ["loc", [null, [28, 16], [28, 56]]]]],
       locals: [],
       templates: [child0, child1, child2, child3, child4, child5, child6]
     };

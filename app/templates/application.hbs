@@ -7,7 +7,7 @@
         <a class="navbar-brand" href="/" class='logo'>UPPRLEFT</a>
         <li id="contact-link">{{#link-to 'contact'}}CONTACT{{/link-to}}</li>
         <li>{{#link-to 'shop'}}SHOP{{/link-to}}</li>
-        <li>{{#link-to 'cart'}}CART{{/link-to}}</li>
+        <li class='pull-right'>{{#link-to 'cart' class='cart pull-right'}}{{fa-icon "shopping-cart" size="lg" class='cart'}}{{/link-to}}</li>
         {{#if session.isAuthenticated }}
         <div class='profile-pic' class='pull-right'>
           <img src={{session.currentUser.profileImageURL}} alt='profile picture' class='profile-pic'>
