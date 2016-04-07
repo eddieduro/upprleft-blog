@@ -393,11 +393,23 @@ Login Section
   color: white;
   text-align: center; }
 
+.flex-logout {
+  display: flex; }
+  .flex-logout p {
+    position: absolute;
+    float: right;
+    right: 0;
+    margin-top: 70px;
+    margin-right: 26rem; }
+
 /**************
 checkout/cart
 *************/
 .cart-view {
   margin-top: 200px; }
+
+.checkout-image {
+  height: 200px; }
 
 /**************
 Admin section
