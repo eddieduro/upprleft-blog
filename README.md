@@ -37,5 +37,5 @@ You will need the following things properly installed on your computer.
 *Firebase
 *Css Animations
 
-###By Eddie Duro, And Josh Overly
+###By Eddie Duro
 
